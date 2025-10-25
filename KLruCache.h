@@ -195,7 +195,7 @@ private:
     NodeMap       nodeMap_; // key -> Node 
     std::mutex    mutex_; // 这个是用来保证线程安全的，保证数据一致性
     /*
-    双向链表，
+    双向链表，虚拟节点
     */
     NodePtr       dummyHead_; // 虚拟头结点
     NodePtr       dummyTail_;
